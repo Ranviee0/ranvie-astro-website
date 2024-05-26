@@ -12,7 +12,7 @@ date: 2024-05-26
 
 ### แล็ปท็อป
 
-<img src="../../public/tech-may-2024/laptop.jpg" width="100%"/>
+<img src="https://live.staticflickr.com/65535/53747304750_1a4b50122f_k.jpg" width="100%"/>
 
 ```
 Model: ASUS TUF A15 FA506IC
@@ -28,7 +28,7 @@ OS: Windows 11 Home
 
 ### เดสก์ท็อป
 
-<img src="../../public/tech-may-2024/desktop.jpg" width="100%"/>
+<img src="https://live.staticflickr.com/65535/53747212159_953b125ac0_k.jpg" width="100%"/>
 
 ```
 Motherboard: Gigabyte B550m K
@@ -47,7 +47,7 @@ OS: Ubuntu 24.04
 
 ### ไมโครโฟน
 
-<img src="../../public/tech-may-2024/microphone.jpg" width="100%"/>
+<img src="https://live.staticflickr.com/65535/53745965507_621f72ea01_k.jpg" width="100%"/>
 
 ```
 Model: Samson Meteor
@@ -57,7 +57,7 @@ Model: Samson Meteor
 
 ### หูฟังมอนิเตอร์
 
-<img src="../../public/tech-may-2024/headphones.jpg" width="100%"/>
+<img src="https://live.staticflickr.com/65535/53745965487_af7edcbdd3_k.jpg" width="100%"/>
 
 ```
 Model: Audiotechnica M40X
