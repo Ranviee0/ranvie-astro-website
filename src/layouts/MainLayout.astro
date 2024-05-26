@@ -1,0 +1,17 @@
+---
+// component import
+import Navbar from "../components/Navbar.astro";
+import MainHead from "./MainHead.astro";
+// style import
+import "../styles/global.css";
+---
+
+<html>
+    <MainHead/>
+    <body>
+        <Navbar/>
+        <main>
+            <slot></slot>
+        </main>
+    </body>
+</html>

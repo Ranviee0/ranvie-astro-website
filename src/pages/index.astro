@@ -1,0 +1,78 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+<MainLayout>
+    </MainLayout>
+    <br/>
+    <section class="content">
+        <div class="header-container">
+            <h1>ยินดีต้อนรับ</h1>
+            <h3>เข้าสู่ห้องเก็บของของแรนวี่</h3>
+        </div>
+        <img src="../../public/chibi.png" width="300px"/>
+    </section>
+    <div class="guide-container">
+        <h3>Guides:</h3>
+        <div class="guide-container-list">
+            <p><a href="/">Home</a> : หน้าหลัก</p>
+            <p><a href="/blog">Blog</a> : บทความต่างๆ พร้อมภาพประกอบ</p>
+            <p><a href="/projects">Projects</a> : โปรเจ็คต่างๆที่นอกเหนือจากคลิป Youtube (ส่วนใหญ่เป็นโปรเจ็คโปรแกรมมิ่ง)</p>
+            <p><a href="/about">About</a> : แนะนำตัว + ช่องทางติดต่อ (และวาร์ปสำหรับเซิร์ฟเวอร์ Discord)</p>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Ranviee - ผลงานทั้งหมดอยู่ภายใต้ CC BY-SA 4.0 ยกเว้นว่าจะระบุใว้เป็นอย่างอื่น</p>
+        </div>
+    </div>
+</MainLayout>
+
+<style>
+    .copyright{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 12px
+    }
+    a{
+    color:fuchsia;
+    }
+    img{
+    margin: 20px;
+    }
+    .guide-container-list{
+    max-width: 512px;
+    }
+    .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: top;
+    flex-direction: column;
+    }
+    .header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .guide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    }
+    p{
+        margin: 0px;
+        padding: 0px;
+    }
+    h1{
+        margin: 0px;
+        padding: 0px;
+    }
+    h3{
+        margin: 0px;
+        padding: 0px;
+    }
+</style>

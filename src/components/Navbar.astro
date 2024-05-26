@@ -1,0 +1,111 @@
+---
+import NavbarLink from "./NavbarLink.astro";
+---
+
+<nav class="navbar">
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <div class="navbar-container">
+        <NavbarLink href="/" class="navbar-element">Home</NavbarLink>
+        <NavbarLink href="/blog" class="navbar-element">Blog</NavbarLink>
+        <NavbarLink href="/projects" class="navbar-element">Projects</NavbarLink>
+        <NavbarLink href="/about" class="navbar-element">About</NavbarLink>
+    </div>
+</nav>
+
+<style>
+    .navbar {
+        font-size: 16px;
+        background-color: rgb(15,15,15);
+    }
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-element {
+        padding: 15px 50px;
+        color: white;
+    }
+    .navbar-element:hover {
+        color: Fuchsia;
+        text-decoration: underline;
+    }
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+    .hamburger{
+        display: none;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgb(15,15,15);
+    }
+    @media (max-width: 768px){
+        .hamburger{
+        display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        .navbar-container {
+            position: fixed;
+            left: 0%;
+            top: -100%;
+            gap: 0;
+            flex-direction: column;
+            background-color: rgb(15,15,15);
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .navbar-element{
+            padding-bottom: 20px;
+        }
+
+        .navbar-element:hover{
+            color: white;
+        }
+        .navbar-container.active{
+            top: 48px;
+        }
+    }
+
+</style>
+
+<script>
+    const hamburger = document.querySelector(".hamburger") as HTMLInputElement;
+    const navContainer = document.querySelector(".navbar-container") as HTMLInputElement;
+
+    hamburger.addEventListener("click", ()=> {
+        hamburger.classList.toggle("active");
+        navContainer.classList.toggle("active");
+    })
+
+    document.querySelectorAll(".navbar-element").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navContainer.classList.remove("active");
+    }))
+
+    window.addEventListener('scroll', function() {
+    console.log('A scroll event has been triggered!');
+    navContainer.classList.remove("active");
+    });
+
+</script>

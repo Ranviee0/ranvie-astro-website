@@ -1,0 +1,73 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+<MainLayout>
+<div class="body">
+	<div class="container">
+		<div class="image-container">
+			<img src="profile.jpg" class="image">
+			<div class="image-prose-container">
+				<p>
+					สวัสดีครับ ผมชื่อว่า แรนวี่ (ランヴィー) <br/>
+					คุณน่าจะรู้จักผมจากคลิปสารคดีบน 
+					<a href="https://www.youtube.com/channel/UC0enToA20FhTvUy6oy-UILg">
+					Youtube</a>
+				</p>
+				<p>
+					ตอนนี้ผมเป็นนักศึกษาภาควิศวกรรมคอมพิวเตอร์ปีสุดท้ายที่ใช้เวลาว่างในการสร้างคอนเทนต์วิดิโอบน YouTube
+				</p>
+				<p>
+					สามารถมานั่งเล่นพูดคุยด้วยกันได้ใน <a href="https://discord.gg/xrrSqwgvaE">Discord</a> นะครับ~
+				</p>
+				<p>
+					หากต้องการติดต่อทางธุรกิจ สามารถอีเมลมาได้ที่ ranviee0@proton.me
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</MainLayout>
+
+<style>
+	.image {
+		width: 300px;
+		height: 300px;
+	}
+	a {
+		color:fuchsia;
+	}
+	.body{
+		display: flex;
+        justify-content: center;
+        align-items: top;
+        margin: 0;
+	}
+	.container {
+        max-width: 960px;
+        }
+	.image-container {
+		display: flex;
+		justify-content: left;
+		padding: 50px;
+	}
+	.image-prose-container {
+		padding-left: 25px;
+	}
+	@media (max-width: 720px){
+		.image-container{
+			flex-direction: column;
+		}
+		.image-prose-container {
+		padding-left: 0px;
+		}
+		.image-container {
+		padding: 15px;
+		}
+		.image {
+		width: 100%;
+		height: 100%;
+		}
+	}
+
+</style>

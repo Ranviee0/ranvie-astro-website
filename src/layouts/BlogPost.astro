@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import MainLayout from "./MainLayout.astro"
+import {formatDate} from "../js/utils";
+import CcFooter from "./CcFooter.astro";
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, desc, date } = Astro.props;
+---
+
+<MainLayout>
+    <div class="content">
+        <div class="container">
+            <div>
+                <h2>{title}</h2>
+                <h4>{formatDate(date)}</h4>
+            </div>
+            <slot/>
+        </div>
+    </div>
+</MainLayout>
+<CcFooter></CcFooter>
+
+<style>
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    padding: 15px;
+}
+.container {
+    max-width: 768px;
+}
+</style>
