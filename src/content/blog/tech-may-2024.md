@@ -31,7 +31,7 @@ OS: Windows 11 Home
 <img src="https://live.staticflickr.com/65535/53747212159_953b125ac0_k.jpg" width="100%"/>
 
 ```
-Motherboard: Gigabyte B550m K
+Motherboard: Gigabyte B550M K
 Case: Cougar MX330-X
 CPU: AMD Ryzen 5 5600
 RAM: 16*1 GB DDR4-3200
@@ -40,7 +40,7 @@ SSD 0: WD Black SN750 500GB
 SSD 1: 512GB OEM
 HDD 0: 2TB WD Blue 7200 RPM
 HDD 1: 2TB WD Blue 7200 RPM
-OS: Ubuntu 24.04
+OS: Ubuntu 22.04
 ```
 
 </br>
